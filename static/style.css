@@ -172,8 +172,6 @@ pre *{
 code{
 	background-color: #282A36;
 	color: #F8F8F2;
-	/*width: 100%;
-	display: block;*/
 }
 
 table{
@@ -191,7 +189,6 @@ th, td{
 	margin: auto;
 }
 
-/*this must be at the end, i dont know why, but it must be*/
 *{
 	box-sizing: border-box;
 	border-radius: 5px;
