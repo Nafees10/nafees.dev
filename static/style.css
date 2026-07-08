@@ -24,7 +24,7 @@ header{
 	margin: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 30pt;
 }
 
@@ -39,7 +39,7 @@ content header, article header{
 	line-height: auto;
 	height: auto;
 	font-size: 24pt;
-	font-weight: 500;
+	font-weight: 400;
 	display: block;
 	text-align: left;
 	padding: 0;
@@ -138,18 +138,42 @@ header a, header a:link, header a:visited, header a:hover, header a:active{
 	font-size: 12pt;
 }
 
+h1, h2, h3, h4, h5, h6{
+	font-weight: 400;
+}
+h1{
+	font-size: 26pt;
+}
+h2{
+	font-size: 24pt;
+}
+h3{
+	font-size: 22pt;
+}
+h4{
+	font-size: 20pt;
+}
+h5{
+	font-size: 18pt;
+}
+h6{
+	font-size: 16pt;
+}
+
 pre{
 	max-width: 100%;
 	overflow-x: auto;
 }
 pre *{
 	overflow-x: auto;
+	width: 100%;
+	display:  block;
 }
-pre code{
+code{
 	background-color: #282A36;
 	color: #F8F8F2;
-	width: 100%;
-	display: block;
+	/*width: 100%;
+	display: block;*/
 }
 
 table{
@@ -165,4 +189,10 @@ th, td{
 	text-align: left;
 	padding: 5px;
 	margin: auto;
+}
+
+/*this must be at the end, i dont know why, but it must be*/
+*{
+	box-sizing: border-box;
+	border-radius: 5px;
 }
