@@ -1,137 +1,61 @@
 body{
-	background-color: #282A36;
-	color: #F8F8F2;
+	background-color: #000000;
+	color: #F0F0F0;
 	font-family: sans-serif;
 	margin: 0px;
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	font-weight: 400;
 	font-size: 14pt;
 	max-width: none;
 }
-@media only screen and (min-width: 800px){
-	body{
-		margin: auto;
-		width: 100%;
-		max-width: 900px;
-	}
-}
 
-header{
+nav{
 	height: 80px;
 	width: 100%;
-	padding-left: 10%;
-	padding-right: 10%;
 	margin: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	font-weight: 400;
-	font-size: 30pt;
+	font-weight: 500;
+	font-size: 20pt;
 }
 
-content{
-	margin: auto;
-	margin-top: 5px;
-	padding: 5px;
-	width: 90%;
-}
-
-content header, article header{
-	line-height: auto;
-	height: auto;
-	font-size: 24pt;
-	font-weight: 400;
-	display: block;
-	text-align: left;
-	padding: 0;
-}
-
-article{
-	background-color: #44475A;
-	color: #F8F8F2;
-	width: 100%;
-	padding: 10px;
-	border-style: solid;
-	border-color: #6272A4;
-	border-width: 1px;
-	margin: auto;
-	margin-bottom: 5px;
-}
-@media only screen and (min-width: 800px){
-	content{
-		width: 70%;
-		max-width: 900px;
-	}
-}
-
-ul.menu{
-	list-style-type: none;
-	padding-left: 0px;
-	overflow: hidden;
-	background-color: #191A21;
-	color: #F8f8F2;
-	height: auto;
-	text-align: center;
-	width: 100%;
-	margin: 0px;
-}
-
-ul.menu li{
-	background-color: #191A21;
-	color: #F8f8F2;
-	display: inline-block;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
+nav a, nav a:link, nav a:visited, nav a:hover, nav a:active{
+	color: #F0F0F0;
 	text-decoration: none;
-	border: none;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-ul.menu li:hover{
-	background-color: #6272A4;
-}
-
-.btn{
-	background-color: #BD93F9;
-	color: #191A21;
-	border: none;
-	height: auto;
-	line-height: 24px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	padding: 6px;
-	margin-bottom: 5px;
-}
-
-.btn:hover{
-	background-color: #6272A4;
-}
-
-.block{
-	width: 100%;
-	display: block;
 }
 
 hr{
 	border: 0;
-	border-bottom: 1px dashed #F8F8F2;
-	background: #BD93F9;
+	border-bottom: 1px dashed #F0F0F0;
+	background: #000000;
+}
+
+div.bio{
+	display: inline-block;
+	max-width: 100%;
+}
+@media only screen and (min-width: 600px){
+	div.bio{
+		max-width: 600px;
+	}
+}
+
+div.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	gap: 20px;
+}
+
+div.card {
+	background-color: #101010;
+	border: 1px solid #505050;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 a, a:link, a:visited, a:hover, a:active{
-	color: #BD93F9;
-	text-decoration: none;
-}
-a.btn:link, a.btn:visited, a.btn:hover, a.btn:active{
-	color: #282A36;
-	text-decoration: none;
-}
-
-header a, header a:link, header a:visited, header a:hover, header a:active{
-	color: #F8F8F2;
-	text-decoration: none;
+	color: #F0F0F0;
 }
 
 .small{
@@ -140,24 +64,28 @@ header a, header a:link, header a:visited, header a:hover, header a:active{
 
 h1, h2, h3, h4, h5, h6{
 	font-weight: 400;
+	margin-top: 6px;
+	margin-bottom: 4px;
 }
 h1{
-	font-size: 26pt;
+	margin-top: 20px;
+	font-weight:  600;
+	font-size: 32pt;
 }
 h2{
-	font-size: 24pt;
+	font-size: 28pt;
 }
 h3{
-	font-size: 22pt;
+	font-size: 26pt;
 }
 h4{
-	font-size: 20pt;
+	font-size: 24pt;
 }
 h5{
-	font-size: 18pt;
+	font-size: 22pt;
 }
 h6{
-	font-size: 16pt;
+	font-size: 20pt;
 }
 
 pre{
@@ -171,7 +99,6 @@ pre *{
 }
 code{
 	background-color: #282A36;
-	color: #F8F8F2;
 }
 
 table{
@@ -180,7 +107,6 @@ table{
 	max-width: 100%;
 	table-layout: fixed;
 	word-break: break-word;
-	color: #F8F8F2;
 }
 
 th, td{
