@@ -4,8 +4,12 @@
 <div class="bio">
 	<h1> Hi, I'm Nafees </h1>
 	<p>
-		I am a software engineer, with a focus on backend development and systems
-		programming. I primarily work with <a href="https://dlang.org">D</a>,
+		I am a software engineer, with a focus on backend development, data
+		engineering, and systems programming.
+	</p>
+	<p>
+		I primarily work with
+		<a href="https://dlang.org">D</a> (and other native languages),
 		C#, Go, and Python.
 	</p>
 	<p>
@@ -86,7 +90,7 @@
 
 <ul>
 {% set blog = get_section(path="blog/_index.md") %}
-{% for page in blog.pages | slice(end=5) %}
+{% for page in blog.pages %}
 <li>
 	<a href="{{ page.permalink }}"> {{ page.title }} </a>
 </li>
